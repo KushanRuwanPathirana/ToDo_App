@@ -1,87 +1,12 @@
-# 📝 Simple To-Do App
+# React + Vite
 
-A simple and minimal To-Do application built with **React.js** and styled using **Tailwind CSS**.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 🚀 Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- ✅ Add tasks
-- 🗑️ Delete tasks
-- ✏️ Mark tasks as complete or incomplete
-- 💾 Save tasks to Local Storage
-- 📱 Fully responsive design
+## Expanding the ESLint configuration
 
----
-
-## ⚙️ Tech Stack
-
-- [React.js](https://react.dev/) – Frontend library
-- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
-
----
-
-## 📂 Project Structure
-```
-simple-todo-app/
-├── public/
-│ └── index.html
-├── src/
-│ ├── assets/
-│ ├── components/
-│ │ ├── TodoItem.jsx
-│ │ └── TodoList.jsx
-│ ├── App.jsx
-│ ├── index.css
-│ └── main.jsx
-├── tailwind.config.js
-├── package.json
-└── README.md
-```
-
-## ⚡ Getting Started
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/your-username/ToDo-app.git
-cd ToDo-app
-```
-
-### 2️⃣ Install Dependencies
-```
-npm install
-```
-### 3️⃣ Start the Development Server
-```
-npm run dev
-```
-
-## 🖌️ Tailwind CSS
-- Tailwind CSS is already set up.
-- Edit tailwind.config.js to customize your design or add new utility classes.
-
-## 📸 Screenshots
-Add screenshots here to show your app in action!
-<table> 
-<tr>
-<td><img src="assets/screenshots/.jpg" width=270 alt="Loading Screen"></td>  
-<td><img src="assets/screenshots/.jpg" width=270 alt="Screenshot 2"></td>
-</tr>
-</table>
-
-## ✅ Future Improvements
- - Edit tasks
- - Add task filters (All, Active, Completed)
- - Dark Mode
-
-## 🌐 Live Demo
-Coming soon! Deploy easily with Vercel or Netlify.
-
-## 📜 License
-This project is licensed under the MIT License.
-
-## 🙌 Author
-Made with ❤️ by [Kushan Ruwan Pathirana](https://github.com/KushanRuwanPathirana)
-
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
