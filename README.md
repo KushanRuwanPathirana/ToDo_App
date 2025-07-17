@@ -1,4 +1,3 @@
-#📝 Simple To-Do App
 # 📝 Simple To-Do App
 
 A minimal and responsive To-Do application built with **React.js** and styled with **Tailwind CSS**.
