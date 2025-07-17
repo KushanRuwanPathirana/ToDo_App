@@ -43,7 +43,6 @@ const ToDo = () => {
         })
     }
 
-
     useEffect(()=>{
         localStorage.setItem("todos", JSON.stringify(todoList))
     },[todoList])
@@ -69,7 +68,7 @@ const ToDo = () => {
 
           <div>
             {todoList.map((item, index)=>{
-                 return<ToDoItems key={index} text={item.text} id={item.id} isComplete={item.isComplete} deleteTodo={deleteTodo}/>
+                 return<ToDoItems key={index} text={item.text} id={item.id} isComplete={item.isComplete} deleteTodo={deleteTodo} toggle={toggle}/>
             })}
           </div>   
     </div>
