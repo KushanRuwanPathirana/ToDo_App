@@ -13,8 +13,6 @@ A simple and minimal To-Do application built with **React.js** and styled using 
 - 🗑️ Delete tasks
 - ✏️ Mark tasks as complete/incomplete
 - 💾 Tasks saved in Local Storage
-- ✏️ Mark tasks as complete or incomplete
-- 💾 Save tasks to Local Storage
 - 📱 Fully responsive design
 
 ---
