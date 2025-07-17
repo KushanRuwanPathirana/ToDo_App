@@ -69,11 +69,10 @@ npm run dev
 - Edit tailwind.config.js to customize your design or add new utility classes.
 
 ## 📸 Screenshots
-Add screenshots here to show your app in action!
 <table> 
 <tr>
-<td><img src="assets/screenshots/.jpg" width=270 alt="Loading Screen"></td>  
-<td><img src="assets/screenshots/.jpg" width=270 alt="Screenshot 2"></td>
+<td><img src="src/assets/Todo Ui1.png" width=480 alt="Loading Screen"></td>  
+<td><img src="src/assets/Added task ui1.png" width=480 alt="Screenshot 2"></td>
 </tr>
 </table>
 
