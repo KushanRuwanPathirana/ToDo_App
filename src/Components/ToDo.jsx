@@ -25,6 +25,25 @@ const ToDo = () => {
          inputRef.current.value ="";
     }
 
+     {/* ------------Delete todo items---------------------   */}
+    const deleteTodo =(id)=>{
+         setTodoList((prevTodos)=>{
+            return prevTodos.filter((todo)=>todo.id !== id)
+         })
+    }
+
+    const toggle =(id)=>{
+        setTodoList((prevTodos)=>{
+            return prevTodos.map((todo)=>{
+                if(todo.id === id){
+                    return {...todo, isComplete: !todo.isComplete}
+                }
+                return todo;
+            })
+        })
+    }
+
+
     useEffect(()=>{
         localStorage.setItem("todos", JSON.stringify(todoList))
     },[todoList])
@@ -46,14 +65,13 @@ const ToDo = () => {
             <button onClick={add} className='border-none rounded-full bg-green-600 w-32 h-12 text-white text-lg font-medium cursor-pointer hover:bg-green-700'>ADD +</button>
         </div>
 
-          {/* ------------To-Do List---------------------   */}
+      {/* ------------To-Do List---------------------   */}
 
           <div>
             {todoList.map((item, index)=>{
-                 return<ToDoItems key={index} text={item.text}/>
+                 return<ToDoItems key={index} text={item.text} id={item.id} isComplete={item.isComplete} deleteTodo={deleteTodo}/>
             })}
-          </div>
-
+          </div>   
     </div>
   )
 }
